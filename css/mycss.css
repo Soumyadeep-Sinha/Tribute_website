@@ -1,0 +1,64 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 75%;
+    }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+body{
+    background: linear-gradient(90deg, rgb(248, 124, 8), white, rgb(5, 102, 1));
+    color: brown;
+}
+#image{
+    max-width: 500px;
+    display: block;
+}
+#headline{
+    font-size: 30px;
+    text-align: center;
+}
+.first{
+    text-align: center;
+}
+.quote{
+    text-align: center;
+}
+#tribute_text{
+    text-align: center;
+}
+#title{
+    font-size: 40px;
+}
+#title-caption{
+    font-size: 20px;
+    font-weight: bold;
+}
